@@ -1,5 +1,5 @@
 # SQL
-SQL Data Cleaning and Exploratory Data Analysis
+_SQL Data Cleaning and Exploratory Data Analysis_
 
 **Data Analyst Project: Layoff Dataset Analysis | SQL**
 
