@@ -1,6 +1,6 @@
 SELECT *
 FROM world_layoffs.layoffs;
-
+-- In this data cleaning task, we have 4 main objectives ->
 -- 1. Remove  duplicates
 -- 2. Standardize the data
 -- 3. Null or blank values
@@ -16,7 +16,7 @@ INSERT layoffs_staging
 SELECT * 
 FROM layoffs;
 
--- 1. Remove  duplicates
+-- 1. Removing duplicates
 
 SELECT *,
 ROW_NUMBER() OVER(PARTITION BY company, location, industry, total_laid_off, percentage_laid_off, stage, country, funds_raised_millions, `date`) AS row_num
@@ -64,7 +64,7 @@ SELECT *
 FROM layoffs_staging2
 WHERE row_num>1;
 
--- 2. Standardizing data
+-- 2. Standardizing the data
 
 SELECT company, TRIM(company)
 FROM layoffs_staging2;
@@ -122,7 +122,7 @@ MODIFY COLUMN `date` DATE;
 SELECT * 
 FROM layoffs_staging2;
 
--- Null and Blank values
+-- 3. Null and Blank values
 
 SELECT * 
 FROM layoffs_staging2
@@ -157,7 +157,7 @@ SELECT *
 FROM layoffs_staging2
 WHERE company LIKE 'Bally%';
 
--- Removing columns or rows
+-- 4. Removing columns or rows
 
 SELECT * 
 FROM layoffs_staging2
