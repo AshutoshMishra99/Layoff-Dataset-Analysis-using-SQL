@@ -3,7 +3,7 @@
 _SQL Data Cleaning and Exploratory Data Analysis_
 
 ## Project Overview
-This project involves cleaning and analyzing a dataset containing information about company layoffs. The goal is to prepare the data for in-depth analysis and derive meaningful insights about layoff trends. The data includes companies' details, layoff counts, company stage, industry, location, and funding information. The tasks are divided into two main objectives: **data cleaning** and **exploratory data analysis (EDA)**.
+This project involves cleaning and analyzing a dataset containing information about company layoffs in the years 2020-2022. The goal is to prepare the data for in-depth analysis and derive meaningful insights about layoff trends. The data includes companies' details, layoff counts, company stage, industry, location, and funding information. The tasks are divided into two main objectives: **data cleaning** and **exploratory data analysis (EDA)**.
 
 ## Objectives
 1. **Data Cleaning:** 
